@@ -74,3 +74,20 @@ Builds are passed if all tests are good and no memory leaks were found.
 - Parse complex keys.
 - Parse sets.
 
+## how to use
+```
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+```
+
+in cmake
+```
+find_package(mini-yaml REQUIRED)
+include_directories(${mini-yaml_INCLUDE_DIRS})
+message(STATUS "mini: "" ${MINI-YAML_LIBRARIES}" " ${MINI-YAML_INCLUDE_DIRS}")
+add_executable(${PROJECT_NAME}_match match.cpp)
+target_link_libraries(${PROJECT_NAME}_match ${MINI-YAML_LIBRARIES})
+```
+

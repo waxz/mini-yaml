@@ -41,7 +41,7 @@ include(${CMAKE_SOURCE_DIR}/cmake/SetEnv.cmake)
 # Library sources
 #set(LIBRARY_FOLDER ${PROJECT_NAME})
 #set(LIBRARY_NAME ${PROJECT_NAME})
-add_subdirectory(${PROJECT_NAME})
+add_subdirectory(yaml)
 message(STATUS "${PROJECT_NAME_LOWERCASE} " ${PROJECT_NAME_LOWERCASE})
 
 
